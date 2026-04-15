@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Inter", "Helvetica Neue", Arial, sans-serif;
+  
+  --color-background: #0f172a;
+  --color-foreground: #f8fafc;
+  
+  --color-card: #1e293b;
+  --color-card-foreground: #f8fafc;
+  
+  --color-popover: #1e293b;
+  --color-popover-foreground: #f8fafc;
+  
+  --color-primary: #22d3ee;
+  --color-primary-foreground: #0f172a;
+  
+  --color-secondary: #334155;
+  --color-secondary-foreground: #f8fafc;
+  
+  --color-muted: #1e293b;
+  --color-muted-foreground: #94a3b8;
+  
+  --color-accent: #22d3ee;
+  --color-accent-foreground: #0f172a;
+  
+  --color-destructive: #f43f5e;
+  --color-destructive-foreground: #f8fafc;
+  
+  --color-border: #334155;
+  --color-input: #334155;
+  --color-ring: #22d3ee;
+  
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
